@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="%project-name%" default="%default-target%" basedir=".">
+
+  <property name="dita.dir" location="%path-to-DITA-OT%"/>
+
+  <target name="%target-name%">
+    <ant antfile="${dita.dir}/build.xml">
+      <property name="args.input" value="%DITA-input%"/>
+      <property name="transtype" value="html5"/>
+    </ant>
+  </target>
+
+</project>
